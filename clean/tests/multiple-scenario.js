@@ -7,6 +7,8 @@ import { AdminPanel } from '../pages/admin-panel.js'
 import { bookingData } from '../data/booking-data.js'
 import { testSetup } from './setup.js'
 
+import { Message } from '../resourceObjects/message/message.js';
+
 const { name } = bookingData
 
 export const options = {
@@ -76,10 +78,8 @@ export async function login() {
 }
 
 export function messages() {
-  const res = http.post('https://automationintesting.online/message/', JSON.stringify(bookingData), {
-    headers: { 'Content-Type': 'application/json' },
-  });
-
-  expect(res.status).to.equal(201)
-  expect(JSON.parse(res.body).name).to.equal(name)
+  const message = new Message();
+  
+  message.getAllMessages();
+  message.postMessage();
 }
