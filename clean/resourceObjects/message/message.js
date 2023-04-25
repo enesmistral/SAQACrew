@@ -1,6 +1,6 @@
 import http from 'k6/http';
 import { check } from 'k6';
-import { bookingData } from '../../data/booking-data.jsc';
+import { bookingData } from '../../data/booking-data.js';
 
 export class Message{
     constructor(){

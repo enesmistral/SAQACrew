@@ -119,7 +119,6 @@ export function post() {
   });
 
   sleep(1);
-
 }
 
 export function get() {

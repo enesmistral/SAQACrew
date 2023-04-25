@@ -1,13 +1,13 @@
 import { chromium } from 'k6/experimental/browser';
-import { expect } from 'https://jslib.k6.io/k6chaijs/4.3.4.0/index.js'
-import http from 'k6/http'
+import { expect } from 'https://jslib.k6.io/k6chaijs/4.3.4.0/index.js';
 
-import { Homepage } from '../pages/homepage.js'
-import { AdminPanel } from '../pages/admin-panel.js'
-import { bookingData } from '../data/booking-data.js'
-import { testSetup } from './setup.js'
+import { Homepage } from '../pages/homepage.js';
+import { AdminPanel } from '../pages/admin-panel.js';
+import { bookingData } from '../data/booking-data.js';
+import { testSetup } from './setup.js';
 
 import { Message } from '../resourceObjects/message/message.js';
+
 
 const { name } = bookingData
 
