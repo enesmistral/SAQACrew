@@ -7,8 +7,8 @@ export const options = {
     bookRoom: {
       executor: 'shared-iterations',
       exec: 'bookRoom',
-      vus: 1,
-      iterations: 1
+      vus: 20,
+      iterations: 20
     }
   },
 }
@@ -42,6 +42,6 @@ export async function bookRoom() {
     }
 }
 
-export function teardown(data) {
+export function teardown() {
     console.log("----==== TEST DONE ====----");
 }

@@ -8,7 +8,7 @@ export function testSetup() {
 
   const res = http.get('https://automationintesting.online/message/')
 
-  const filteredQuery = res.json().messages.filter(message => message.name == 'Marie')
+  const filteredQuery = res.json().messages.filter(message => message.name == 'Sarajevo QA')
 
   if (filteredQuery.length < 0) return
 

@@ -20,7 +20,8 @@ export class Message{
     }
 
     postMessage(){
-        var result = http.post('https://automationintesting.online/message/', JSON.stringify(bookingData), {
+        console.log(`Sending POST ${this.url}`);
+        var result = http.post(this.url, JSON.stringify(bookingData), {
             headers: { 'Content-Type': 'application/json' },
         });
 

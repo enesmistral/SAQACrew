@@ -13,24 +13,74 @@ const { name } = bookingData
 
 export const options = {
   scenarios: {
+    //1
+    // booking: {
+    //   executor: 'shared-iterations',
+    //   exec: 'booking',
+    //   vus: 1,
+    //   iterations: 1
+    // },
+    // messages: {
+    //   executor: 'shared-iterations',
+    //   exec: 'messages',
+    //   vus: 1,
+    //   iterations: 1,
+    // },
+    // login: {
+    //   executor: 'shared-iterations',
+    //   exec: 'login',
+    //   vus: 1,
+    //   iterations: 1
+    // },
+    //2
+    // booking: {
+    //   executor: 'ramping-vus',
+    //   exec: 'booking',
+    //   startVUs: 0,
+    //   stages: [
+    //     { duration: '1m', target: 1 },
+    //     { duration: '10s', target: 0 },
+    //   ],
+    //   gracefulRampDown: '0s',
+    // },
+    // messages: {
+    //   executor: 'ramping-vus',
+    //   exec: 'messages',
+    //   stages: [
+    //     { duration: '1m', target: 1 },
+    //     { duration: '10s', target: 0 },
+    //   ],
+    //   gracefulRampDown: '0s',
+    // },
+    // login: {
+    //   executor: 'ramping-vus',
+    //   exec: 'login',
+    //   startVUs: 0,
+    //   stages: [
+    //     { duration: '1m', target: 20 },
+    //     { duration: '10s', target: 0 },
+    //   ],
+    //   gracefulRampDown: '0s',
+    // },
+    //3
     booking: {
-      executor: 'shared-iterations',
+      executor: 'constant-vus',
       exec: 'booking',
       vus: 1,
-      iterations: 1
+      duration: '30s'
     },
     messages: {
-      executor: 'shared-iterations',
+      executor: 'constant-vus',
       exec: 'messages',
-      vus: 1,
-      iterations: 1,
+      vus: 5,
+      duration: '30s'
     },
     login: {
-      executor: 'shared-iterations',
+      executor: 'constant-vus',
       exec: 'login',
-      vus: 1,
-      iterations: 1
-    }
+      vus: 10,
+      duration: '30s'
+    },
   },
 }
 

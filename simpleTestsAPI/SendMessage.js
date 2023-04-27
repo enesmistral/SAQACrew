@@ -7,8 +7,8 @@ export const options = {
     //         { target: 15, duration: '1m' },
     //         { target: 0, duration: '1m' },
     // ],
-    "iterations": 10,
-    "vus": 10,
+    "iterations": 1,
+    "vus": 1,
     thresholds: {
         http_req_failed: ['rate < 0.1'], //request failure rate < 10%
     },
@@ -31,7 +31,7 @@ export default function () {
 
     const res = http.post("https://automationintesting.online/message/", JSON.stringify(data), headerParams);
 
-    console.log(res.json(["messageid"]));
+    console.log("ispisi ID: " + res.json(["messageid"]));
 
     
     check(res, {
