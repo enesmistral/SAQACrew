@@ -39,7 +39,7 @@ export const options = {
       exec: 'get',
       startVUs: 0,
       stages: [
-        { duration: '1m', target: 20 },
+        { duration: '1m', target: 50 },
         { duration: '10s', target: 0 },
       ],
       gracefulRampDown: '0s',

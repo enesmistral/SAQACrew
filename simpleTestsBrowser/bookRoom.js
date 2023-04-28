@@ -7,8 +7,8 @@ export const options = {
     bookRoom: {
       executor: 'shared-iterations',
       exec: 'bookRoom',
-      vus: 20,
-      iterations: 20
+      vus: 10,
+      iterations: 10
     }
   },
 }

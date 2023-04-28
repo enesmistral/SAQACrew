@@ -7,8 +7,8 @@ export const options = {
     //         { target: 15, duration: '1m' },
     //         { target: 0, duration: '1m' },
     // ],
-    "iterations": 1,
-    "vus": 1,
+    "iterations": 100,
+    "vus": 100,
     thresholds: {
         http_req_failed: ['rate < 0.1'], //request failure rate < 10%
     },

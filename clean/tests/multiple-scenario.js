@@ -78,7 +78,7 @@ export const options = {
     login: {
       executor: 'constant-vus',
       exec: 'login',
-      vus: 10,
+      vus: 100,
       duration: '30s'
     },
   },
