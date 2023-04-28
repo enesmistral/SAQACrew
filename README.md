@@ -1,7 +1,7 @@
 # SAQACrew
 
 A simple project to demonstrate the latest version of k6 and k6 browser.
-Prerequisites: k6
+Prerequisites: k6 installed https://k6.io/docs/get-started/installation/
 
 Running the test
 
